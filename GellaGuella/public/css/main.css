@@ -1,0 +1,386 @@
+@import 'fonts.css';
+
+/* Global */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5{
+	overflow-y: hidden;
+}
+
+/* Header */
+
+.container-header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-attachment: fixed;
+}
+
+.container-header h1{
+    font-family: OpenSans-Bold;
+    font-size: 70px;
+	padding: 0px 500px 0px 100px;
+    color: white;
+    overflow-y: hidden;
+	transition: .5s;
+}
+
+@media(max-width: 1200px){
+	.container-header h1{
+		font-size: 60px;
+		padding: 0px 250px 0px 100px;
+		transition: .5s;
+	}
+}
+
+@media(max-width: 700px){
+	.container-header h1{
+		text-align: center;
+		font-size: 50px;
+		padding: 0px 0px 0px 0px;
+		transition: .5s;
+	}
+}
+
+@media(max-width: 590px){
+	.container-header h1{
+		text-align: center;
+		font-size: 40px;
+		padding: 0px 0px 0px 0px;
+		transition: .5s;
+	}
+}
+
+@media(max-width: 420px){
+	.container-header h1{
+		text-align: center;
+		font-size: 30px;
+		padding: 0px 0px 0px 0px;
+		transition: .5s;
+	}
+}
+
+/* Nav */
+
+nav{
+    width: 100%;
+	height: 80px;
+    overflow-y: hidden;
+    position: fixed;
+    font-family: Poppins-Regular;
+	z-index: 10;
+	transition: .5s;
+}
+
+.sticky{
+	background-color: #fdd66b;
+	transition: .5s;
+}
+
+label.logo{
+	color: #fff;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+	transition: .8s;
+}
+
+label .logo .logoimg{
+    width: 100%;
+}
+
+nav ul{
+	float: right;
+	margin-right: 20px;
+}
+
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+
+nav ul li a{
+	font-size: 17px;
+	padding: 7px 13px;
+    color: #FFF;
+	transition: .8s;
+}
+
+a.active, a:hover{
+    text-decoration: none;
+    color: #fcba04;
+	transition: .5s;
+}
+
+.sticky a.active, a:hover{
+	color: #af8000;
+	transition: .5s;
+}
+
+.checkbtn{
+	font-size: 30px;
+	color: #FFF;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+#check{
+	display: none;
+}
+
+@media(max-width: 952px){
+	label.logo{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	
+	nav ul li a{
+		font-size: 16px;
+	}
+}
+
+@media(max-width: 858px){
+	.checkbtn {
+		display: block;
+	}
+
+	#list{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #011627;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+
+	nav #list li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+        overflow-y: hidden;
+	}
+
+	nav #list li a {
+		font-size: 20px;
+	}
+
+	a:hover, a.active {
+		background: none;
+		color: #fcba04;
+	}
+
+	#check:checked ~ #list {
+		left: 0;
+	}
+}
+
+@media(max-width: 400px){
+	label.logo {
+		color: #FFF;
+		font-size: 20px;
+		line-height: 80px;
+		padding: 0 40px;
+		font-weight: bold;
+		transition: .8s;
+	}
+}
+
+/* Footer */
+
+.container-foo{
+	padding: 60px 70px;
+	background-color: #252525;
+	width: 100%;
+	display: flex;
+}
+
+#logo-anchor{
+	cursor: pointer;
+}
+
+/* Social */
+
+.detail-container{
+	height: 100%;
+	width: 33.3%;
+	display: flex;
+	justify-content: center;
+}
+
+.helper-detail h3{
+	font-family: Poppins-Black;
+	color: #fff;
+	font-size: 35px;
+	overflow-y: hidden;
+	transition: .5s;
+}
+
+.icon-wrapper{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: left;
+	width: 45px;
+	height: 45px;
+	border-radius: 15px;
+	background-color: #222222;
+	margin-right: 5px;
+}
+
+.icons{
+	display: flex;
+	justify-content: center;
+}
+
+.icon-wrapper a{
+	font-size: 25px;
+	color: #b3b3b3;
+	transition: .5s;
+}
+
+.icon-wrapper a:hover{ color: #ffffff; }
+
+/* Shortcuts */
+
+.short-container{
+	height: 100%;
+	width: 33.3%;
+	text-align: center;
+	transition: .5s;
+}
+
+.short-container h3,
+.questions-container h3{
+	font-family: Poppins-Black;
+	color: #fdd66b;
+	font-size: 20px;
+	overflow-y: hidden;
+	transition: .5s;
+}
+
+.short-container ul li a,
+.questions-container ul li a{
+	color: #c9c9c9;
+	font-size: 18px;
+	transition: .5s;
+}
+
+.short-container ul li a:hover,
+.questions-container ul li a:hover{
+	color: #fdd66b;
+	font-size: 18px;
+	transition: .5s;
+}
+
+/* Questions */
+
+.questions-container{
+	height: 100%;
+	width: 33.3%;
+	text-align: center;
+	transition: .5s;
+}
+
+/* SpaceSoft Co. Copyright */
+
+.wave-credits{
+	background-color: transparent;
+	display: block;
+	height: 84px;
+	margin-top: -80px;
+	margin-bottom: -2px;
+	background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1360 84" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(253, 215, 109, 1)" d="M 0 48 C 182.4 48 273.6 5 456 5 L 456 5 L 456 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(253, 215, 109, 1)" d="M 455 5 C 817 5 998 64 1360 64 L 1360 64 L 1360 0 L 455 0 Z" stroke-width="0"></path> </svg>');
+	background-size: cover;
+	background-repeat: no-repeat;
+	transform: rotate(180deg);
+	z-index: 8;
+}
+
+.credits{
+	background-color: #fdd76d;
+	padding: 25px;
+	color: #af8000;
+	font-family: Poppins-Regular;
+}
+
+@media(max-width: 840px){
+	.container-foo{
+		display: block;
+	}
+
+	.detail-container,
+	.short-container,
+	.questions-container{
+		width: 100%;
+		transition: .5s;
+	}
+
+	.short-container,
+	.questions-container{
+		margin-top: 25px;
+		transition: .5s;
+	}
+}
+
+@media(max-width: 365px){
+	.helper-detail h3{
+		font-size: 25px;
+		transition: .5s;	
+	}
+}
+
+@media(max-width: 300px){
+	.helper-detail h3{
+		font-size: 20px;
+		transition: .5s;	
+		text-align: center;
+	}
+}
+
+.questions-container a,
+.short-container a,
+.credits a{
+   color: #805e00;
+   font-family: Poppins-Bold;
+}
+
+/* Animate Classes */
+
+.anime-top{
+    opacity: 0;
+    transform: translate3d(0, -50px, 0);
+    transition: .5s;
+}
+
+.anime-left{
+    opacity: 0;
+    transform: translate3d(-100px, 0, 0);
+    transition: .5s;
+}
+
+.anime-right{
+    opacity: 0;
+    transform: translate3d(100px, 0, 0);
+    transition: .5s;
+}
+
+.anime-start{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: .5s;
+}

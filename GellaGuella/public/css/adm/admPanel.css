@@ -1,0 +1,99 @@
+@import '../fonts.css';
+
+/* AdminLte reCSS */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a:link, :visited, :active {
+    color: rgb(36, 36, 36);
+    transition: .5s;
+}
+
+.main-sidebar{
+    background-color: #1d1d1d;
+    border: none;
+}
+
+.brand-link{
+    background-color: #1d1d1d;
+    border-color: #1d1d1d;
+    margin: 0px !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.main-header{
+    background-color: #292929;
+    border: none !important;
+}
+
+.brand-text{
+    font-family: Poppins-Bold;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* .brand-image{
+    display: none;
+} */
+
+.nav-link{
+    font-family: Poppins-Light;
+}
+
+.nav-link i{
+    margin-right: 10px;
+    text-align: center;
+}
+
+.nav-pills .nav-item .active {
+    background-color: #202020 !important;
+    color: #ffffff !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.nav-pills .nav-item .nav-link:hover{
+    background-color: #202020 !important;
+    transition: .5s;
+}
+
+.content-wrapper{
+    background-color: #303030;
+}
+
+.dropdown-toggle span{
+    color: #636363;
+}
+
+.user-footer{
+    background-color: #1d1d1d !important;
+    border: none !important;
+}
+
+.user-footer a{
+    font-family: Poppins-Bold;
+    background-color: #1d1d1d !important;
+    border: none !important;
+}
+
+.fa-power-off{
+    display: none;
+}
+
+.sidebar-closed .wrapper .main-sidebar 
+    .sidebar .mt-2 .nav .nav-item .nav-link i{
+    padding-left: 5px;
+    padding-right: 2px !important;
+    transition: .5s;
+}
+
+.sidebar-collapse .wrapper .main-sidebar 
+    .sidebar .mt-2 .nav .nav-item .nav-link i{
+    padding-left: 5px;
+    padding-right: 2px !important;
+    transition: .5s;
+}

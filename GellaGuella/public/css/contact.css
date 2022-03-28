@@ -1,0 +1,283 @@
+@import 'fonts.css';
+
+/* Contato */
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.background{
+    background-image: url('https://www.capitani.com.br/wp-content/uploads/2017/08/contact-background.jpg');
+    height: 130vh;
+}
+.container-header{
+    filter: grayscale(50%);
+    background-position: top;
+}
+h3{
+    font-family: Poppins-Bold, sans-serif;
+    letter-spacing: 1.2px;
+}
+
+p{
+    font-family: Poppins-Light, sans-serif;
+}
+
+#main{
+    position: absolute;
+    width: 100%;
+    max-width: 1200px;
+    font-family: Poppins-Regular, sans-serif;
+    border-radius: 10px;
+    height: 130vh;
+    left: 50%;
+    transform: translate(-50%,-100%);
+    justify-content: space-around;
+    display: flex;
+    padding: 20px;
+}
+
+#main > div{
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+#main > div:first-child > div{
+    width: 100%;
+    border-radius: 15px;
+    height: 30%;
+}
+
+.card{
+    background-color: #011627;
+    padding: 10px 20px;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card .card-content{
+    color: white;
+    margin-left: 10px;
+    width: 80%;
+}
+
+.card h3{
+    color: #FCBA04;
+    margin: 0;
+    font-size: max(1.1em,1.4vw);
+}
+
+.card p{
+    margin: 0;
+    font-size: max(.8em, 1.2vw);
+}
+
+.card > .icon{
+    border-radius: 50%;
+    background-color: #f6f6f6;
+    display: flex;
+    max-height: 60px;
+    max-width: 60px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #111;
+}
+
+#form{
+    border-radius: 15px;
+    background-color: #011627;
+} 
+
+#form h3{
+    color: #eee;
+}
+
+#form form{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    padding: 20px 10px;
+    flex-direction: column;
+}
+
+#form input[type='text'],input[type='email'],#form  select{
+    width: 100%;
+    padding: 15px 25px;
+    border-radius: 5px;
+}
+
+#form textarea{
+    height: 200px;
+    padding: 15px 10px;
+    border-radius: 5px;
+}
+
+.ml-3{
+    margin-left: 5px;
+    font-size: 1.3em;
+}
+
+#form button[type='submit']{
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    align-self: flex-end;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-family: Poppins-Bold, sans-serif;
+    box-shadow: 0px 0px 10px #2e2200;
+    background-color: #FCBA04;
+}
+
+input:focus, textarea:focus,select:focus{
+    outline: none;
+}
+
+input{
+    border: none;
+}
+
+.alert-error{
+    width: 100%;
+    border: #690909 1.3px solid;
+    border-radius: 5px;
+    max-height: 100px;
+    padding: 5px;
+    background-color: #f8b4b4e3;
+}
+
+.alert-error div{
+    flex-wrap: wrap;
+    display: flex;
+
+}
+
+.invalid{
+    border: #690909 1.5px solid;
+    background-color: #fddcdc;
+    box-shadow: #690909 1px 1px 5px;
+}
+
+.invalid::placeholder{
+    color: #181818;
+}
+
+.alert-error li{
+    color: #690909;
+    flex-grow: 1;
+    font-size: .75em;
+    flex-basis: 50%;
+}
+
+.li-error{
+    color: #690909;
+    width: 100%;
+    margin: 0;
+    border: #690909 .7px solid;
+    border-radius: 5px;
+    padding: 3px 10px;
+    background-color: #fba6a6e3;
+}
+
+.d-none{
+    display: none;
+}
+
+.alert-success{
+    width: 100%;
+    border: #0e5302 1.3px solid;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #c5f8bc;
+}
+
+.alert-success li{
+    color: #0e5302;
+}
+
+@media screen and (max-width: 700px){
+    #main{
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    #main > div{
+        width: 100%;
+    }
+
+    #form{
+        height: 60%;
+    }
+
+    #main > #cards{
+        order: 2;
+        height: 40%;
+        width: 100%;
+        margin: 10px 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    #main > #cards > div{
+        flex-grow: 1;
+        flex-basis: 0;
+        margin: 2px;
+        height: 100%;
+        max-height: 100px;
+        min-height: 80px;
+        width: 100%;
+        min-width: 250px;
+    }
+
+    #form input, #form select, #form textarea{
+        margin-top: 1.5px;
+    }
+
+    #form button[type='submit']{
+        font-size: .8em;
+        max-width: 100%;
+        padding: 10px;
+    } 
+
+    #form input[type='text'], input[type='email'], #form select{
+        padding: 10px;
+        font-size: .8em;
+    }
+
+    #form h3{
+        font-size: 1.1em;
+    }
+
+    #form textarea{
+        height: 80px;
+        font-size: .8em;
+    }
+
+    #form form{
+        padding: 5px;
+    }
+        
+    .alert-error li{
+        font-size: .8em;
+    }
+    
+    .alert-success li{
+        font-size: .8em;
+    }
+}

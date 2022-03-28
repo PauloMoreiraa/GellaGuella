@@ -1,0 +1,70 @@
+/* Fonts */
+
+/* Open Sans */
+
+@font-face{
+    font-family: OpenSans-Bold;
+    src: url('../fonts/opensans/OpenSans-Bold.ttf');
+}
+
+@font-face{
+    font-family: OpenSans-ExtraBold;
+    src: url('../fonts/opensans/OpenSans-ExtraBold.ttf');
+}
+
+@font-face{
+    font-family: OpenSans-Italic;
+    src: url('../fonts/opensans/OpenSans-Italic.ttf');
+}
+
+@font-face{
+    font-family: OpenSans-Light;
+    src: url('../fonts/opensans/OpenSans-Light.ttf');
+}
+
+@font-face{
+    font-family: OpenSans-LightItalic;
+    src: url('../fonts/opensans/OpenSans-LightItalic.ttf');
+}
+
+@font-face{
+    font-family: OpenSans-Regular;
+    src: url('../fonts/opensans/OpenSans-Regular.ttf');
+}
+
+/* Poppins */
+
+@font-face{
+    font-family: Poppins-Black;
+    src: url('../fonts/poppins/Poppins-Black.ttf');
+}
+
+@font-face{
+    font-family: Poppins-Bold;
+    src: url('../fonts/poppins/Poppins-Bold.ttf');
+}
+
+@font-face{
+    font-family: Poppins-Italic;
+    src: url('../fonts/poppins/Poppins-Italic.ttf');
+}
+
+@font-face{
+    font-family: Poppins-Light;
+    src: url('../fonts/poppins/Poppins-Light.ttf');
+}
+
+@font-face{
+    font-family: Poppins-Regular;
+    src: url('../fonts/poppins/Poppins-Regular.ttf');
+}
+
+@font-face{
+    font-family: Poppins-Thin;
+    src: url('../fonts/poppins/Poppins-Thin.ttf');
+}
+
+@font-face{
+    font-family: Poppins-ThinItalic;
+    src: url('../fonts/poppins/Poppins-ThinItalic.ttf');
+}
